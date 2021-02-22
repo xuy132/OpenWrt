@@ -9,11 +9,11 @@
 name: Repo Dispatcher
 
 on: 
-  # push: 
-  #   branches:
-  #     - master
-  # schedule:
-  #   - cron: 30 13 * * 6
+   push: 
+     branches:
+       - master
+   schedule:
+     - cron: 30 13 * * 6
   workflow_dispatch:
     inputs:
       ssh:
